@@ -24,16 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const rsvpBtn = document.createElement("button");
     rsvpBtn.textContent = "Toggle RSVP";
     rsvpBtn.addEventListener("click", function () {
-      if (li.textContent.includes("Not Attending")) {
-        li.textContent = name + " - Attending ";
-      } else {
-        li.textContent = name + " - Not Attending ";
-      }
-      li.appendChild(rsvpBtn);
-      li.appendChild(removeBtn);
-    });
-
-    const removeBtn = document.createElement("button");
+  if (li.textContent.includes("Not Attending")) {
+    li.firstChild.textContent = name + " - Attending ";
+  } else {
+    li.firstChild.textContent = name + " - Not Attending ";
+  }
+});
+  const removeBtn = document.createElement("button");
     removeBtn.textContent = "Remove";
     removeBtn.addEventListener("click", function () {
       li.remove();
