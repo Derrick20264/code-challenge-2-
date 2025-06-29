@@ -21,4 +21,7 @@ How to Use
  Use the form to add guest names.
  Click "Toggle RSVP" to change their attendance status.
  Click "Remove" to delete a guest from the list.
+ Live Site  
+https://derrick20264.github.io/code-challenge-2-/
+
 
